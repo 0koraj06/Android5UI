@@ -12,38 +12,118 @@
 
 
     <EditText
-        android:id="@+id/f1r2"
-        android:layout_width="70px"
-        android:layout_height="70px"
-
-        android:layout_alignLeft="@+id/f1r1"
-        android:layout_alignStart="@+id/f1r1"
-        android:layout_below="@+id/f1r1"
-        android:layout_marginTop="17dp"
-        android:hint="1"
+        android:id="@+id/editText11"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:ems="10"
         android:inputType="number"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="15sp" />
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/editText9"
+        android:layout_alignLeft="@+id/editText9"
+        android:layout_alignStart="@+id/editText9" />
 
     <EditText
-        android:id="@+id/f1r1"
-        android:layout_width="70px"
-        android:layout_height="70px"
-
-        android:layout_marginTop="20dp"
-        android:hint="1"
+        android:id="@+id/editText10"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:ems="10"
         android:inputType="number"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="15sp"
-        android:layout_below="@+id/fighter1"
-        />
+
+        android:layout_alignBaseline="@+id/editText11"
+        android:layout_alignBottom="@+id/editText11"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_alignStart="@+id/editText5" />
 
     <EditText
-        android:id="@+id/f2r1"
+        android:id="@+id/editText9"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/totalf1"
+        android:layout_alignLeft="@+id/totalf1"
+        android:layout_alignStart="@+id/totalf1" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_above="@+id/editText11"
+        android:layout_alignLeft="@+id/editText11"
+        android:layout_alignStart="@+id/editText11"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_alignBaseline="@+id/editText4"
+        android:layout_alignBottom="@+id/editText4"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_alignBaseline="@+id/editText8"
+        android:layout_alignBottom="@+id/editText8"
+        android:layout_alignLeft="@+id/editText6"
+        android:layout_alignStart="@+id/editText6"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/editText11"
+        android:layout_alignLeft="@+id/editText10"
+        android:layout_alignStart="@+id/editText10" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_above="@+id/editText8"
+        android:layout_alignLeft="@+id/editText8"
+        android:layout_alignStart="@+id/editText8"
+        android:layout_marginBottom="19dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignTop="@+id/f1r2"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_above="@+id/f1r2"
+        android:layout_alignLeft="@+id/f2r1"
+        android:layout_alignStart="@+id/f2r1"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText"
         android:layout_width="70px"
         android:layout_height="70px"
+
         android:hint="1"
         android:inputType="number"
         android:textAlignment="center"
@@ -51,8 +131,50 @@
         android:textSize="15sp"
         android:layout_alignBaseline="@+id/f1r1"
         android:layout_alignBottom="@+id/f1r1"
-        android:layout_toLeftOf="@+id/totalf2"
-        android:layout_toStartOf="@+id/totalf2" />
+        android:layout_toLeftOf="@+id/button1"
+        android:layout_toStartOf="@+id/button1" />
+
+    <EditText
+        android:id="@+id/f1r2"
+        android:layout_width="80px"
+        android:layout_height="80px"
+
+        android:hint="1"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_above="@+id/editText4"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_marginBottom="17dp" />
+
+    <EditText
+        android:id="@+id/f1r1"
+        android:layout_width="80px"
+        android:layout_height="80px"
+
+        android:hint="1"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_above="@+id/editText2"
+        android:layout_alignLeft="@+id/f1r2"
+        android:layout_alignStart="@+id/f1r2" />
+
+    <EditText
+        android:id="@+id/f2r1"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_alignTop="@+id/f1r1"
+        android:layout_toEndOf="@+id/button1"
+        android:layout_toRightOf="@+id/button1"
+        android:hint="1"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
 
 
 
@@ -114,14 +236,13 @@
 
     <EditText
         android:id="@+id/f2r2"
-        android:layout_width="70px"
-        android:layout_height="70px"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_alignLeft="@+id/totalf2"
+        android:layout_alignStart="@+id/totalf2"
+        android:layout_alignTop="@+id/editText"
         android:ems="10"
-        android:inputType="number"
-        android:layout_alignBaseline="@+id/f1r2"
-        android:layout_alignBottom="@+id/f1r2"
-        android:layout_alignLeft="@+id/f2r1"
-        android:layout_alignStart="@+id/f2r1" />
+        android:inputType="number" />
 
 </RelativeLayout>
 
