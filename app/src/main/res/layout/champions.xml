@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        app:srcCompat="@drawable/ibfbelt"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginTop="94dp"
+        app:srcCompat="@drawable/ibflogo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="68dp"
+        android:layout_marginEnd="68dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        app:srcCompat="@drawable/wbabelt"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        app:srcCompat="@drawable/wbalogo"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        app:srcCompat="@drawable/wbcbelt"
+        android:layout_above="@+id/imageView8"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        app:srcCompat="@drawable/wbclogo"
+        android:layout_above="@+id/imageView7"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_marginBottom="12dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        app:srcCompat="@drawable/wbobelt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        app:srcCompat="@drawable/wbologo"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/gbtitle"
+        android:layout_width="400px"
+        android:layout_height="100px"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:text="Governing Bodies and Champions"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

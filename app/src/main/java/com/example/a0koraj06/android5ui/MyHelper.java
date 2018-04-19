@@ -19,7 +19,7 @@ public class MyHelper extends SQLiteOpenHelper{
 
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL ("CREATE TABLE IF NOT EXISTS Diary (Id INTEGER PRIMARY KEY, Title VARCHAR(255), Content VARCHAR(255), Date INTEGER)");
+        db.execSQL ("CREATE TABLE IF NOT EXISTS Champions (Id INTEGER PRIMARY KEY, Title VARCHAR(255), Name VARCHAR(255), weightClass VARCHAR(255)");
 
 
 
@@ -28,7 +28,7 @@ public class MyHelper extends SQLiteOpenHelper{
 
 
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL ("DROP TABLE IF EXISTS Diary");
+        db.execSQL ("DROP TABLE IF EXISTS Champions");
         onCreate(db);
     }
 
