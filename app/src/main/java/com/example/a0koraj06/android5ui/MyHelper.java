@@ -19,8 +19,10 @@ public class MyHelper extends SQLiteOpenHelper{
 
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL ("CREATE TABLE IF NOT EXISTS Champions (Id INTEGER PRIMARY KEY, Title VARCHAR(255), Name VARCHAR(255), weightClass VARCHAR(255)");
-
+        db.execSQL ("CREATE TABLE IF NOT EXISTS WBA (Id INTEGER PRIMARY KEY, Name VARCHAR(50), weightClass VARCHAR(30)");
+        db.execSQL ("CREATE TABLE IF NOT EXISTS WBC (Id INTEGER PRIMARY KEY, Name VARCHAR(50), weightClass VARCHAR(30)");
+        db.execSQL ("CREATE TABLE IF NOT EXISTS WBO (Id INTEGER PRIMARY KEY, Name VARCHAR(50), weightClass VARCHAR(30)");
+        db.execSQL ("CREATE TABLE IF NOT EXISTS IBF (Id INTEGER PRIMARY KEY, Name VARCHAR(50), weightClass VARCHAR(30)");
 
 
 
@@ -36,7 +38,8 @@ public class MyHelper extends SQLiteOpenHelper{
     {
         SQLiteDatabase db = getWritableDatabase();
         SQLiteStatement stmt = db.compileStatement
-                ("INSERT INTO Diary(Title,Content,Date) VALUES (?, ?, ?)");
+                ("INSERT INTO Diary(Title,Content,Date) VALUES (?, ?, ?),(?, ?, ?)");
+
         stmt.bindString (1, Title);
         stmt.bindString (2, Content);
         stmt.bindLong (3, Date);
