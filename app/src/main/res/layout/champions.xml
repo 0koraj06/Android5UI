@@ -6,90 +6,95 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="200px"
-        android:layout_height="200px"
-        android:layout_marginLeft="46dp"
-        android:layout_marginStart="46dp"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginLeft="75dp"
+        android:layout_marginStart="75dp"
         app:srcCompat="@drawable/ibfbelt"
-        android:layout_alignTop="@+id/imageView2"
+        android:layout_below="@+id/gbtitle"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="200px"
-        android:layout_height="200px"
-        android:layout_marginTop="94dp"
+        android:layout_width="150px"
+        android:layout_height="150px"
         app:srcCompat="@drawable/ibflogo"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="68dp"
-        android:layout_marginEnd="68dp" />
+        android:layout_below="@+id/gbtitle"
+        android:layout_alignRight="@+id/gbtitle"
+        android:layout_alignEnd="@+id/gbtitle" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="200px"
-        android:layout_height="200px"
-        app:srcCompat="@drawable/wbabelt"
-        android:layout_centerVertical="true"
+        android:layout_width="150px"
+        android:layout_height="150px"
         android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView" />
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/wbabelt" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="200px"
-        android:layout_height="200px"
-        app:srcCompat="@drawable/wbalogo"
-        android:layout_alignTop="@+id/imageView3"
+        android:layout_width="150px"
+        android:layout_height="150px"
         android:layout_alignLeft="@+id/imageView2"
-        android:layout_alignStart="@+id/imageView2" />
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView3"
+        app:srcCompat="@drawable/wbalogo" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="200px"
-        android:layout_height="200px"
-        app:srcCompat="@drawable/wbcbelt"
-        android:layout_above="@+id/imageView8"
+        android:layout_width="150px"
+        android:layout_height="150px"
         android:layout_alignLeft="@+id/imageView3"
-        android:layout_alignStart="@+id/imageView3" />
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        app:srcCompat="@drawable/wbcbelt" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="200px"
-        android:layout_height="200px"
-        app:srcCompat="@drawable/wbclogo"
-        android:layout_above="@+id/imageView7"
+        android:layout_width="150px"
+        android:layout_height="150px"
         android:layout_alignLeft="@+id/imageView4"
         android:layout_alignStart="@+id/imageView4"
-        android:layout_marginBottom="12dp" />
+        android:layout_below="@+id/imageView4"
+        app:srcCompat="@drawable/wbclogo" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="200px"
-        android:layout_height="200px"
-        app:srcCompat="@drawable/wbobelt"
-        android:layout_alignParentBottom="true"
+        android:layout_width="150px"
+        android:layout_height="150px"
         android:layout_alignLeft="@+id/imageView5"
-        android:layout_alignStart="@+id/imageView5" />
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_below="@+id/imageView6"
+        app:srcCompat="@drawable/wbobelt" />
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="200px"
-        android:layout_height="200px"
-        app:srcCompat="@drawable/wbologo"
-        android:layout_alignTop="@+id/imageView7"
+        android:layout_width="150px"
+        android:layout_height="150px"
         android:layout_alignLeft="@+id/imageView6"
-        android:layout_alignStart="@+id/imageView6" />
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_alignTop="@+id/imageView7"
+        app:srcCompat="@drawable/wbologo" />
 
     <TextView
         android:id="@+id/gbtitle"
         android:layout_width="400px"
         android:layout_height="100px"
-        android:layout_above="@+id/imageView"
-        android:layout_centerHorizontal="true"
         android:text="Governing Bodies and Champions"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/displayc"
+        android:layout_width="550px"
+        android:layout_height="400px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
 
 </RelativeLayout>
