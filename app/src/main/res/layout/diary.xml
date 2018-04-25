@@ -6,9 +6,44 @@
     android:layout_height="match_parent">
 
 
-    <ListView
-        android:id="@+id/lstTask"
+    <Button
+        android:id="@+id/addtask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
+        android:layout_marginTop="59dp"
+        android:text="Submit"
+        android:layout_below="@+id/task"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/gettask"
+        android:layout_width="600px"
+        android:layout_height="400px"
+        android:layout_below="@+id/addtask"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/taskname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Task"
+        android:layout_below="@+id/taskname"
+        android:layout_alignLeft="@+id/taskname"
+        android:layout_alignStart="@+id/taskname" />
 </RelativeLayout>
