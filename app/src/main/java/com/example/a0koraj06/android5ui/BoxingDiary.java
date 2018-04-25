@@ -1,26 +1,24 @@
 package com.example.a0koraj06.android5ui;
 
 
-import android.content.DialogInterface;
-import android.content.res.Resources;
-import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
+
 import android.os.Bundle;
+
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
+
 import android.view.View;
-import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.TextView;
 
-import java.util.ArrayList;
 
-public class BoxingDiary extends AppCompatActivity {
+import static com.example.a0koraj06.android5ui.R.id.addtask;
+
+
+public class BoxingDiary extends AppCompatActivity implements View.OnClickListener {
     EditText taskname,task;
     MyHelper DbHelper;
-    ListView alist;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +26,29 @@ public class BoxingDiary extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.diary);
 
+
+        DbHelper = new MyHelper(this);
         taskname = (EditText) findViewById(R.id.taskname);
         task = (EditText) findViewById(R.id.task);
-        DbHelper = new MyHelper(this);
 
+        Button btn = (Button) findViewById(addtask);
+        btn.setOnClickListener(this);
+
+    }
+
+    public void onClick(View view) {
+
+        EditText TaskName = (EditText) findViewById(R.id.taskname);
+        String taskname = TaskName.getText().toString() ;
+
+        EditText Task = (EditText) findViewById(R.id.task);
+        String task = Task.getText().toString();
+
+
+        long id =  DbHelper.addTask(taskname,task);
+
+        new AlertDialog.Builder(this).setPositiveButton("OK", null).
+                setMessage(""+id).show();
 
     }
 

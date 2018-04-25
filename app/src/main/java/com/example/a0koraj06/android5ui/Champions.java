@@ -1,5 +1,6 @@
 package com.example.a0koraj06.android5ui;
 
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +9,10 @@ import android.widget.TextView;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -22,17 +26,25 @@ public class Champions extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.champions);
 
-        String dir_path = Environment.getExternalStorageDirectory().getAbsolutePath();
-        TextView textView = (TextView)findViewById(R.id.displayc);
 
+        try {
+            // TextView has an append()
+            TextView textview = (TextView) findViewById(R.id.displayc);
 
-        FileReader fr = new FileReader(dir_path + "/textedit.txt");
-        BufferedReader br = new BufferedReader (fr);
-        String line = "";
-        while((line = br.readLine()) != null){
+            BufferedReader reader = new BufferedReader(new FileReader("champions.txt"));
+            String line = "";
+            while ((line = reader.readLine()) != null) {
+                textview.append(line);
+                System.out.println(line);
+            }
 
-            System.out.println(line);
-
+        } catch (IOException e) {
+            System.out.println("ERROR: " + e);
+        }
     }
-}
-}
+         }
+
+
+
+
+

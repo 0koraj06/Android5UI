@@ -36,18 +36,18 @@
         tools:layout_editor_absoluteY="287dp" />
 
     <Button
-        android:id="@+id/wdiv"
+        android:id="@+id/boxerDiary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Weight Dvisions"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="503dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp"
         android:layout_alignBaseline="@+id/cchamp"
         android:layout_alignBottom="@+id/cchamp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/textView3"
         android:layout_toRightOf="@+id/textView3"
-        android:layout_toEndOf="@+id/textView3" />
+        android:text="Boxing Diary"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="503dp" />
 
     <Button
         android:id="@+id/cchamp"
