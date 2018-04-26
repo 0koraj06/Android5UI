@@ -31,8 +31,9 @@ public class Champions extends AppCompatActivity {
             // TextView has an append()
             TextView textview = (TextView) findViewById(R.id.displayc);
 
-            BufferedReader reader = new BufferedReader(new FileReader("champions.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader(Environment.getExternalStorageDirectory().getAbsolutePath()+"/champions.txt"));
             String line = "";
+
             while ((line = reader.readLine()) != null) {
                 textview.append(line);
                 System.out.println(line);

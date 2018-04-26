@@ -33,7 +33,7 @@
         android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Name" />
 
     <EditText
         android:id="@+id/task"
@@ -42,7 +42,7 @@
         android:layout_marginTop="17dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Task"
+        android:hint="Task"
         android:layout_below="@+id/taskname"
         android:layout_alignLeft="@+id/taskname"
         android:layout_alignStart="@+id/taskname" />

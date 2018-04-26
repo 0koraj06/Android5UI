@@ -22,13 +22,7 @@ public class BoxingInfo extends AppCompatActivity {
                 startActivity(new Intent(BoxingInfo.this, Champions.class));
             }
         });
-        Button btn6 = (Button)findViewById(R.id.boxerDiary);
 
-        btn6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(BoxingInfo.this, BoxingDiary.class));
-            }
-        });
+
     }
 }

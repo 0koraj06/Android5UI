@@ -45,6 +45,7 @@ public class BoxingDiary extends AppCompatActivity implements View.OnClickListen
         String task = Task.getText().toString();
 
 
+
         long id =  DbHelper.addTask(taskname,task);
 
         new AlertDialog.Builder(this).setPositiveButton("OK", null).

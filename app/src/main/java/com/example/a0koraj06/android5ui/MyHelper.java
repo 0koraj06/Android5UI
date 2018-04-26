@@ -24,12 +24,12 @@ public class MyHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL ("CREATE TABLE IF NOT EXISTS Diary (Id INTEGER PRIMARY KEY, Name VARCHAR(255), Task VARCHAR(255)");
+        db.execSQL ("CREATE TABLE IF NOT EXISTS Diary (Id INTEGER PRIMARY KEY, Name VARCHAR(255), Task VARCHAR(255))");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL ("DROP TABLE IF EXISTS Music");
+        db.execSQL ("DROP TABLE IF EXISTS Diary");
         onCreate(db);
     }
 
