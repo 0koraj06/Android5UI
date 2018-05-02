@@ -88,12 +88,20 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:id="@+id/displayc"
-        android:layout_width="350px"
-        android:layout_height="600px"
-        android:layout_below="@+id/imageView7"
+    <ScrollView
+        android:layout_width="600px"
+        android:layout_height="500px"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:textAlignment="center"/>
+        android:layout_marginBottom="26dp">
+
+        <TextView
+            android:id="@+id/displayc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView7"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center" />
+    </ScrollView>
 
 </RelativeLayout>
