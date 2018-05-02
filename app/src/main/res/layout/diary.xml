@@ -10,19 +10,22 @@
         android:id="@+id/addtask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="59dp"
-        android:text="Submit"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_below="@+id/task"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="56dp"
+        android:text="Add"
+        android:onClick="btn_click"/>
 
     <TextView
         android:id="@+id/gettask"
         android:layout_width="600px"
         android:layout_height="400px"
+        android:layout_marginTop="30dp"
         android:layout_below="@+id/addtask"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
-        android:text="TextView" />
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:id="@+id/taskname"
@@ -33,7 +36,8 @@
         android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Name" />
+        android:hint="Name"
+        />
 
     <EditText
         android:id="@+id/task"
@@ -46,4 +50,34 @@
         android:layout_below="@+id/taskname"
         android:layout_alignLeft="@+id/taskname"
         android:layout_alignStart="@+id/taskname" />
+
+    <Button
+        android:id="@+id/deletetask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gettask"
+        android:layout_toLeftOf="@+id/addtask"
+        android:layout_toStartOf="@+id/addtask"
+        android:text="Delete"
+        android:onClick="btn_click"/>
+
+    <Button
+        android:id="@+id/updatetask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/deletetask"
+        android:layout_toLeftOf="@+id/deletetask"
+        android:layout_toStartOf="@+id/deletetask"
+        android:text="Update"
+        android:onClick="btn_click"/>
+
+    <Button
+        android:id="@+id/viewtask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/updatetask"
+        android:layout_toLeftOf="@+id/updatetask"
+        android:layout_toStartOf="@+id/updatetask"
+        android:text="View"
+        android:onClick="btn_click"/>
 </RelativeLayout>

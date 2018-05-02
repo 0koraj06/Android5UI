@@ -1,10 +1,12 @@
 package com.example.a0koraj06.android5ui;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteStatement;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -14,38 +16,42 @@ import java.util.ArrayList;
 
 public class MyHelper extends SQLiteOpenHelper {
 
-    static final int VERSION = 1;
-    static final String DATABASE_NAME = "TestDB";
+ public MyHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version){
+     super(context, "TEXT.db", factory, version);
 
-    public MyHelper(Context ctx ){
+ }@Override
+    public void onCreate(SQLiteDatabase sqLiteDatabase){
 
-        super(ctx, DATABASE_NAME, null, VERSION);
+        sqLiteDatabase.execSQL("CREATE TABLE DIARY(ID INTEGER PRIMARY KEY AUTOINCREMENT, TASKNAME TEXT UNIQUE, TASK TEXT);");
     }
-    @Override
-    public void onCreate(SQLiteDatabase db) {
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS DIARY;");
+        onCreate(sqLiteDatabase);
 
-        db.execSQL ("CREATE TABLE IF NOT EXISTS Diary (Id INTEGER PRIMARY KEY, Name VARCHAR(255), Task VARCHAR(255))");
     }
+    public void add_task(String taskname, String task ){
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("TASKNAME", taskname);
+        contentValues.put("TASK", task);
+        this.getWritableDatabase().insertOrThrow("DIARY","",contentValues);
 
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL ("DROP TABLE IF EXISTS Diary");
-        onCreate(db);
     }
-
-    public long addTask(String Name, String Task)
-    {
-        SQLiteDatabase db = getWritableDatabase();
-        SQLiteStatement stmt = db.compileStatement
-                ("INSERT INTO Diary(Name,Task) VALUES (?, ?)");
-        stmt.bindString (1, Name);
-        stmt.bindString (2, Task);
-
-        long id = stmt.executeInsert();
-        return id;
+    public void delete_task(String taskname){
+        this.getWritableDatabase().delete("DIARY","TASKNAME='"+taskname+"'", null);
     }
 
-    public void deleteTask(String task) {}
+    public void update_task(String old_taskname, String new_taskname){
+        this.getWritableDatabase().execSQL("UPDATE DIARY SET TASKNAME='"+new_taskname+"' WHERE TASKNAME='"+old_taskname+"'");
+
+    }
+
+    public void view_tasks(TextView textView){
+        Cursor cursor = this.getReadableDatabase().rawQuery("SELECT * FROM DIARY", null);
+        while (cursor.moveToNext()){
+            textView.append(cursor.getString(1) + "" + cursor.getString(2));
+        }
+
+    }
 
 
 
