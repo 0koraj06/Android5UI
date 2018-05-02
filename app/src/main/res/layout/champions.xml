@@ -90,10 +90,10 @@
 
     <TextView
         android:id="@+id/displayc"
-        android:layout_width="188px"
-        android:layout_height="650px"
-        android:layout_below="@+id/gbtitle"
-        android:layout_toLeftOf="@+id/imageView2"
-        android:layout_toStartOf="@+id/imageView2" />
+        android:layout_width="350px"
+        android:layout_height="600px"
+        android:layout_below="@+id/imageView7"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
 
 </RelativeLayout>

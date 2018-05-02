@@ -4,6 +4,7 @@ import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -31,16 +32,19 @@ public class Champions extends AppCompatActivity {
             // TextView has an append()
             TextView textview = (TextView) findViewById(R.id.displayc);
 
+            Log.d("assignment", "Champions.onCreate()");
             BufferedReader reader = new BufferedReader(new FileReader(Environment.getExternalStorageDirectory().getAbsolutePath()+"/champions.txt"));
             String line = "";
 
             while ((line = reader.readLine()) != null) {
-                textview.append(line);
+                Log.d("assignment", "Current line: " + line);
+                textview.append(line + "\n" );
                 System.out.println(line);
             }
 
         } catch (IOException e) {
             System.out.println("ERROR: " + e);
+            Log.d("assignment", "Error opening file: " + e.toString());
         }
     }
          }
