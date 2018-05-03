@@ -63,7 +63,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f1r2"
@@ -79,7 +80,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
     <EditText
         android:id="@+id/f1r3"
         android:layout_width="100px"
@@ -96,7 +98,8 @@
         android:layout_below="@+id/f1r1"
         android:layout_alignLeft="@+id/f1r1"
         android:layout_alignStart="@+id/f1r1"
-        android:layout_marginTop="19dp" />
+        android:layout_marginTop="19dp"
+        android:maxLength="2"/>
 
 
     <EditText
@@ -114,7 +117,8 @@
         android:textStyle="bold"
         android:layout_alignLeft="@+id/f1r2"
         android:layout_alignStart="@+id/f1r2"
-        android:layout_alignTop="@+id/f1r3" />
+        android:layout_alignTop="@+id/f1r3"
+        android:maxLength="2"/>
     <EditText
         android:id="@+id/f1r5"
         android:layout_width="100px"
@@ -131,7 +135,8 @@
         android:layout_below="@+id/f1r3"
         android:layout_alignLeft="@+id/f1r3"
         android:layout_alignStart="@+id/f1r3"
-        android:layout_marginTop="18dp" />
+        android:layout_marginTop="18dp"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f1r6"
@@ -148,7 +153,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f1r7"
@@ -167,7 +173,8 @@
         android:layout_below="@+id/f1r5"
         android:layout_alignLeft="@+id/f1r5"
         android:layout_alignStart="@+id/f1r5"
-        android:layout_marginTop="23dp" />
+        android:layout_marginTop="23dp"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f1r8"
@@ -186,7 +193,8 @@
 
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f1r9"
@@ -205,7 +213,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
     <EditText
         android:id="@+id/f1r10"
         android:layout_width="100px"
@@ -222,7 +231,8 @@
         android:layout_below="@+id/f1r8"
         android:layout_alignLeft="@+id/f1r8"
         android:layout_alignStart="@+id/f1r8"
-        android:layout_marginTop="18dp" />
+        android:layout_marginTop="18dp"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f1r11"
@@ -240,7 +250,8 @@
         android:layout_below="@+id/f1r9"
         android:layout_alignLeft="@+id/f1r9"
         android:layout_alignStart="@+id/f1r9"
-        android:layout_marginTop="17dp" />
+        android:layout_marginTop="17dp"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f1r12"
@@ -258,7 +269,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f2r1"
@@ -275,7 +287,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f2r2"
@@ -292,7 +305,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f2r3"
@@ -309,7 +323,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f2r4"
@@ -326,7 +341,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f2r5"
@@ -343,7 +359,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f2r6"
@@ -360,7 +377,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f2r7"
@@ -377,7 +395,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f2r8"
@@ -394,7 +413,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f2r9"
@@ -411,7 +431,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f2r10"
@@ -428,7 +449,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f2r11"
@@ -445,7 +467,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
 
     <EditText
         android:id="@+id/f2r12"
@@ -464,7 +487,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:maxLength="2"/>
 
     <TextView
         android:id="@+id/totalf1"
