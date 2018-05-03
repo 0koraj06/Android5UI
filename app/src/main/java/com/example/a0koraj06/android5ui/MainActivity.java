@@ -70,29 +70,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-        MenuItem item = menu.findItem(R.id.action_search);
-        SearchView sv = (SearchView) MenuItemCompat.getActionView(item);
-        sv.setOnQueryTextListener(new SearchHandler());
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.save) {
-
-            new AlertDialog.Builder(this).setPositiveButton("OK", null).
-                    setMessage("Saving...").show();
-            return true;
-        }
-
-
-        return false;
-
-
-    }
 
 
     class SearchHandler implements SearchView.OnQueryTextListener {
