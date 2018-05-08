@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -20,8 +16,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="47dp"
         android:onClick="addscore"/>
-
-
     <EditText
         android:id="@+id/fighter1"
         android:layout_width="350px"
@@ -33,7 +27,6 @@
         android:maxWidth="350px"
         android:textAlignment="center"
         android:textSize="12sp" />
-
     <EditText
         android:id="@+id/fighter2"
         android:layout_width="350px"
@@ -469,12 +462,10 @@
         android:textColorHint="@android:color/darker_gray"
         android:textStyle="bold"
         android:maxLength="2"/>
-
     <EditText
         android:id="@+id/f2r12"
         android:layout_width="100px"
         android:layout_height="100px"
-
         android:layout_alignBottom="@+id/f1r12"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
@@ -489,7 +480,6 @@
         android:textColorHint="@android:color/darker_gray"
         android:textStyle="bold"
         android:maxLength="2"/>
-
     <TextView
         android:id="@+id/totalf1"
         android:layout_width="150px"

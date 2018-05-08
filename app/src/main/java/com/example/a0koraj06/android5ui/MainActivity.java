@@ -2,19 +2,15 @@ package com.example.a0koraj06.android5ui;
 
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
+
 import android.view.View;
 import android.widget.Button;
 
-import static android.R.id.button3;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -36,9 +32,7 @@ public class MainActivity extends AppCompatActivity {
                         setMessage("The FloatingActionButton was clicked!").show();
             }
         });
-
        Button btn = (Button)findViewById(R.id.button3);
-
         btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -54,45 +48,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, BoxingInfo.class));
             }
         });
-
-
-
         fab1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, BoxingDiary.class));
             }
         });
-
-
-
-
-
     }
-
-
-
-    class SearchHandler implements SearchView.OnQueryTextListener {
-
-
-        public SearchHandler() {
-
-        }
-
-        public boolean onQueryTextChange(String txt) {
-            // do nothing... (this method runs when the user types a new character)
-            return true;
-        }
-
-        public boolean onQueryTextSubmit(String txt) {
-            // show the search text in an alert dialog
-            new AlertDialog.Builder(MainActivity.this).setPositiveButton("OK", null).
-                    setMessage(txt).show();
-            return true;
-        }
-    }
-
-
 }
 
 
